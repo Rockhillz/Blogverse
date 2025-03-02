@@ -1,6 +1,5 @@
 import { Drawer, List, ListItem, ListItemText, IconButton, useMediaQuery, useTheme, Box } from "@mui/material";
 import { useState } from "react";
-// import ChevronRightIcon from "@mui/icons-material/ChevronRight"; // Right arrow icon
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Sidebar = ({ onSelect }) => {
