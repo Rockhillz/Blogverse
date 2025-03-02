@@ -33,6 +33,7 @@ npm install
 ```
    npm start
 ```
+5. [Backend deployed server link](https://blogverse-7xfw.onrender.com)
 
 ### Frontend Setup
 1. Navigate to the backend folder:
@@ -60,7 +61,7 @@ npm install
 - Authentication: JSON Web Tokens (JWT) are used for user authentication.
 - Security: Implemented rate limiting to prevent abuse.
 - Testing: Jest and Supertest are used for backend testing. Jest also used for frontend testing.
-- API Documentation: Swagger is used to generate API documentation. [docs](http://localhost:8020/api-docs)
+- API Documentation: Swagger is used to generate API documentation. [docs](https://blogverse-7xfw.onrender.com/api-docs/)
 
 ## Dependencies
 ### Backend
@@ -108,4 +109,7 @@ Swagger is used to document the API endpoints. To view the API documentation:
 ```
 http://localhost:5000/api-docs
 ```
-
+3. Live API link
+```
+https://blogverse-7xfw.onrender.com/api-docs/
+```
