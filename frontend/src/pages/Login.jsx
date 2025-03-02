@@ -47,9 +47,9 @@ const Login = () => {
       }
 
 
-      login(data.token); // Update global authentication state
+      login(data.token); 
 
-      navigate("/", { replace: true }); // Redirect to home page
+      navigate("/", { replace: true });
     } catch (error) {
       setError(error.message);
     } finally {
