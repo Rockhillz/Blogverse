@@ -50,7 +50,7 @@ npm install
    ```
     VITE_API_BASE_URL=http://localhost:8020/api
   ```
-4. Start the backend server
+4. Start the Vite + React app
 ```
    npm run dev
 ```
