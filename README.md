@@ -54,6 +54,15 @@ npm install
 ```
    npm run dev
 ```
+5. [Fronend deployed link](https://web-blogverse.onrender.com)
+## 🚀 NOTE: Backend Cold Start on Render
+When using the frontend deployed on Render, the backend may experience a cold start delay of 1-2 minutes if it has been idle for some time.
+### Impact
+- Users might experience a delay in loading data when visiting the site after a period of inactivity.
+### Solution
+- Be Patient: The backend will start automatically but may take up to 2 minutes.
+- Shows a Loaders.
+
 
 ## Design Choices
 - Frontend: Built with React.js and Material UI for UI styling. React Bootstrap used For Navigation Bar.
