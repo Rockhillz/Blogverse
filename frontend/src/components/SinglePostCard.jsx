@@ -1,7 +1,12 @@
 import { Card, CardContent, Typography, Chip, Box, Avatar, Divider } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
+import { useEffect } from "react";
 
 const SinglePostCard = ({ title, content, author, tags, avatar, date }) => {
+
+  useEffect(() => {
+    document.title = `${title}`;
+  }, [title]);
 
     const formattedDate = new Date(date).toLocaleDateString("en-US", {
         month: "short",

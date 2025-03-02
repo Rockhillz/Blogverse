@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Typography, TextField, Button, Grid, CircularProgress, Container, Paper } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const [title, setTitle] = useState("");
+  useEffect(() => {
+    document.title = `Create Account`;
+  }, [title]);
+
   const [formData, setFormData] = useState({
     email: "",
     username: "",
