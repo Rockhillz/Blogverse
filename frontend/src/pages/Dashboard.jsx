@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Sidebar from "../components/Sidebar";
 import DashOverview from "../components/DashOverview";
 import DashPosts from "../components/DashPost";
 
 const Dashboard = () => {
+  const [ title, setTitle ] = useState("")
+  useEffect(() => {
+    document.title = `Dashboard`;
+  }, [title]);
+
   const [selectedSection, setSelectedSection] = useState("Overview");
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));

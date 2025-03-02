@@ -11,6 +11,8 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const Post = () => {
+  const [title, setTitle] = useState("")
+ 
   const [posts, setPosts] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [tagQuery, setTagQuery] = useState("");
@@ -47,7 +49,10 @@ const Post = () => {
 
   useEffect(() => {
     fetchPosts();
-  }, []);
+   
+      document.title = `BlogVerse Home: All Blog Posts`;
+   
+  }, [title]);
 
   const handleSearch = () => {
     fetchPosts(searchQuery, tagQuery, authorQuery);
