@@ -1,9 +1,13 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Box, Typography, TextField, Button, Grid, CircularProgress, Container, Paper } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/authContext"; 
 
 const Login = () => {
+  const [title, setTitle] = useState("Login");
+  useEffect(() => {
+    document.title = `Login`;
+  }, [title]);
   const [formData, setFormData] = useState({
     emailOrUsername: "",
     password: "",

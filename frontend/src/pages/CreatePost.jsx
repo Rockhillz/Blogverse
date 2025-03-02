@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../context/authContext";
 import { Box, TextField, Button, Container, Typography, Paper, Chip, CircularProgress } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +7,11 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the CSS
 
 const CreatePost = () => {
+  const [title, setTitle] = useState("");
+  useEffect(() => {
+    document.title = `Create Post`;
+  }, [title]);
+
   const { isAuthenticated } = useContext(AuthContext);
   const [formData, setFormData] = useState({
     title: "",
